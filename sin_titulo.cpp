@@ -115,6 +115,153 @@ int main(){
 }
 */
 
+
+/*
+//3.
+void crear(float *&p, int tm){
+	p=new float[tm];
+}
+	
+void ingresar(float*p,int tm){
+	int num;
+	int num2=0;
+	cout<<"se ingresaron "<<tm-1<<" numeros aleatorios del 0 al 10000 "<<endl;
+	for(int i=0;i<tm;i++){
+		num=rand()%100;
+		while(num2>num){
+		num=rand()%100000;
+		}
+		*(p+i)=num;
+		num2=num;
+		}
+	}
+		
+void eliminar(float*p,int tm,int eli){
+	int aux;
+	for(int i=0;i<tm;i++){
+		if(eli==*(p+i)){
+			*(p+i)=NULL;
+			
+		}
+	}
+	    cout<<endl;
+	
+}
+			
+	
+void ingresar2(float* p,int tm,int x){
+	int aux;
+	for(int i=0;i<tm+1;i++){
+		if(i==10){
+			*(p+i)=x;
+		}
+	}
+}
+	
+void ordenar(float* p, int tm){
+		
+	int aux;
+	for(int i=0;i<=tm+1;i++){
+		for(int j=i+1;j<tm+1;j++){
+			if(*(p+i)>*(p+j))
+			{
+				aux=*(p+i);
+				*(p+i)=*(p+j);
+				*(p+j)=aux; 
+			}
+			
+		}
+		
+	}
+	cout<<endl;
+}
+	
+
+		
+
+				
+void imprimir(float*p,int tm){
+	for(int i=0;i<tm;i++)
+	//cout<<v[i];
+	cout<<*(p+i)<<" ";
+	cout<<endl;
+	
+}
+
+	
+void imprimir2(float*p,int tm){
+	for(int i=0;i<tm+1;i++){
+		if(*(p+i)!=0)
+			cout<<*(p+i)<<" ";
+	}
+	cout<<endl;
+		
+}
+	
+	
+void borrar(float *p, int tm){
+	delete p;
+}
+int main(){
+	int ta,tb,x,y;
+	float*p1,*p2;
+	crear(p1,11);
+	ingresar(p1,11);
+	imprimir(p1,10);
+	cout<<"ingresar valor a ingresar al puntero : "<<endl;
+	cin>>y;
+	ingresar2(p1,10,y);
+	imprimir(p1,11);
+	ordenar(p1,10);
+	imprimir(p1,11);
+	cout<<endl;
+	cout<<"ingresar valor a eliminar del puntero : "<<endl;
+	cin>>x;
+	eliminar(p1,10,x);
+	imprimir2(p1,10);
+	
+	
+	
+	borrar(p1,(ta+1));
+	return 0;
+
+}
+
+*/
+
+
+/*
+//5.
+void unir(char *p1, char *p2)
+{
+while(*p1){
+	p1++;      
+}
+while(*p2){
+	*p1=*p2;   
+	p2++;      
+	p1++;      
+}
+	
+	
+	
+}
+
+int main (){
+	char p1[10],p2[10];
+	cout << "ingrese 1 cadena de caracteres : ";
+	cin.getline(p2,10);
+	cout << "ingrese 2 cadena de caracteres : ";
+	cin.getline(p1,10);
+	
+	unir(p1,p2);
+	
+	cout <<p1<< endl;
+	return 0;
+}
+*/
+
+
 /*
 //6.
 #include <iostream>
